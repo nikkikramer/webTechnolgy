@@ -1,0 +1,193 @@
+---
+title: "Synthesis & Evaluation"
+date: 01-02-2022
+Group: 133
+Student_1: "Ammar Obeid"
+Student_2: "Nikki Kramer"
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Assignment 4</title>
+        <style>
+            table {
+                border: solid 1px black;
+                border-collapse: collapse;
+                border-spacing: 0;
+                font: normal 12px Arial, sans-serif;
+            }
+            table thead th {
+                background-color: lightgray;
+                border: solid 1px black;
+                color: black;
+                padding: 10px;
+                text-align: left;
+            }
+            table tbody td {
+                border: solid 1px black;
+                color: #333;
+                padding: 10px;
+            }
+            table ul {
+                list-style: square;
+                padding-left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>A4: Syntesis & Evaluation</h1>
+        <h3>02/02/2022 - Lab group 133</h3>
+        <h4>Nikki Kramer & Ammar Obeid</h4>
+        
+        <div>
+            <h2>Introduction</h2>
+            <ul>
+
+                <li>Accessibility</li>
+                <p>The most important thing in webpages is being accessible. That is why we first checked if it follows the web content accessibility guidlines.
+                    For example our webpage does not rely on one colour and it keeps shows every single element clearly.
+                    We also provide clear navigation mechanisms. Moreover, we tried to make the page as clear and simple as possible.
+                </p>
+
+                <li>Usability</li>
+                <p>Usability is an important aspect to consider in any webpage, that's why we made sure that our one-page website also follows the usabilty guidelines.
+                    Our page Shows the company logo in a reasonable size and noticeable location. It has an about us section. For easier user experience we have made a navigation bar 
+                    with 3 buttons. These button allow the user to move directley to a specific section in the webpage without scrolling. We also used images and clips to illustrate our section.
+                    We also wanted to give our users quick information in the form of lists.
+                </p>
+            </ul>
+        </div>
+        <div>
+            <h2>Accessibility highlights</h2>
+            <p>As discussed between us, we find that the most relevant accessibility guidelines our page follows are: </p>
+            <ul>
+                <li><a href="#guideline2.1">2.1 Keyboard accessible</a></li>
+                <p>Our page is fully accessible using the keyboard. So without having a working mouse you can access all elements using keyboard keys like the tab or arrows buttons. In addition, no functionality is lost since due to our keyboard accessibility, the form can be also be used with solely the keyboard to submit and reset products in the database. The main focus of our website is the products, so when our form would not be keyboard accessible, the website would not work properly as we envisioned.</p>
+                <li><a href="guideline2.4">2.4 The page is navigable</a></li>
+                <p>Our website is provided by a fully working navigation bar. The user can use it to directly move to the most important sections or parts of our page regardless of what section you are in at that time. Therefore we think that it is one of guidelines our website adhires the most. </p>
+            </ul>
+        </div>
+        <div>
+            <h2>Improvement plan</h2>
+            <p>Any webpage needs continuous improvements, in order to make our page better we have made an improvement plan. This plan is made using our TAs feedback and the evaluation of the accessibility of our page according to the W3C Web Content Accessibility Guidelines (WCAG) 2.0.
+                This way we can develop our website and make it look more professional and to provide a better user interface and experience.
+                First we will make sure that we do not get any errors on W3C. And also we wanted to fix any issues or comments the TA mentioned. Moreover we want to make later further improvements.
+            </p>
+            <ul>
+                <li>Make the navigation bar stick to the top of the page when scrolling, such that there is always a mechanism available to bypass blocks of content <a href="#guidline2.4.1">(Guidline 2.4.1 - Bypass Blocks).</a></li>
+                <li>Make links in the navigation bar to every section of the page (not just home, about us and products).</li>
+                <li>Make navigation bar more responsive.</li>
+                <li>Only show the important details while printing the page</li>
+                <li>Page breaks are better implemented</li>
+            </ul>
+           
+        </div>
+        <div>
+            <h2>Appendix A</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Guidelines</th>
+                        <th>Sub-guideline</th>
+                        <th>Evaluation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.1 Text Alternatives</td>
+                        <td>1.1.1 Non-text Content</td>
+                        <td>
+                            <ul>
+                                <li>Controls, Input:The website makes use of different type of user input's (text,number,url) where the names and id's of these user input tags describes the purpose of the user input which is asked. Every input field is also presented with a placeholder value which tells the user what kind of input is expected.</li>
+                                <li>Time-Based Media: The webpage has a media file/video-only file present on the webpage. Nevertheless, this video is purely for visual design an does not have any meaning of the contents of the webpage. Therefore no text is accompanied with this video since it has not got any meaning.</li>
+                                <li>Test: Guidline does not apply since, the webpage doesn't contain a test.</li>
+                                <li>Sonsory: As stated in guidline 1.3.3 the webpage does not have any sensory characteristics, therefore the guidline does not apply.</li>
+                                <li>CAPTCHA: Guidline does not apply since, the webpage doesn't contain a CAPTCHA.</li>
+                                <li>Decoration, Formatting, Invisible: The webpage consists of a video in the 'about us' section which is pure decoration. The website fails this guidline since this video is not implemented in such a way that it can be ignored by assistive technology at the moment. </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">1.3 Adaptable</td>
+                        <td>1.3.1 Info and Relationships</td>
+                        <td>The website does not use any auditory formatting therefore the information and relationships that are implied by auditory formatting are preserved. In addition the visual formatting also preserves the information and relationships, when one would remove the stylesheet from the web document the contents of the website does not change, thus it can be said that the information, structure and relationships conveyed through presentation are available in text.</td>
+                    </tr>
+                    <tr>
+                        <td>1.3.2 Meaningful Sequence</td>
+                        <td>The website consists of a meaningful sequence. When one visites the webpage one would first come across the webpage title page, then one would come across the section describing what the webpage is about, following are the products available on the website. Thus it can be said that the content are presented in a menaningful order. In addition, if one would delete the CSS style sheet from the webpage the webpage would still display the page's content in the correct order.</td>
+                    </tr>
+                    <tr>
+                        <td>1.3.3 Sensory Characteristics</td>
+                        <td>This website has no sensory characteristics, it does not describe any controls solely via references or auditory cues.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">1.4 Distinguishable</td>
+                        <td>1.4.1 Use of Color</td>
+                        <td>If one were to remove all the colors from the website the substantive content would not change, thus the information on the website is not conveyed through color differences. This ensures that users who cannot see color can still perceive the information on the website just as good as users who can see color. </td>
+                    </tr>
+                    <tr>
+                        <td>1.4.2 Audio Control</td>
+                        <td>This doesn't apply to the website since there are no audio fragments available on the website. </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" id="guideline2.1">2.1 Keyboard Accessible</td>
+                        <td>2.1.1 Keyboard</td>
+                        <td>For this website, the entire content of the page is operable thorugh a keyboard or keyboard interface. Using keyboards keys like the tab, arrows, enter, etc a person with no vision who cannot use a mouse is still available to browse through the websites content and use the user input features to add certain products to the database.</td>
+                    </tr>
+                    <tr>
+                        <td>2.1.2 No Keyboard Trap</td>
+                        <td>The form on the website can still be updated/reset using only the keyboard. Just like the links to other sections of the webpage and links to other websites which can be used solely with the keyboard. With the use of the keyboard a user is available to see and use the whole page as one would who has for example a mouse and keyboard available.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4" id="guideline2.4">2.4 Navigable</td>
+                        <td id="guidline2.4.1">2.4.1 Bypass Blocks</td>
+                        <td>The website has a navigation bar at the top of the document, which makes it easier for users to directly go the desired section. This purpose makes it easier to reach the main content of the website quickly and easily. Nevertheless, this navigation bar is only available when a user is at the top of the page. Therefore, the mechanism of the navigation bar is not always available to bypass blocks of content and therefore this guidline is failed.</td>
+                    </tr>
+                    <tr>
+                        <td>2.4.2 Page Titled</td>
+                        <td>This website has headers for every section which describes the sections content. The title/name of the webshop can be found on the tab containing the page, which makes the title of the page easily availabble to the users for identifying the page. </td>
+                    </tr>
+                    <tr>
+                        <td>2.4.3 Focus Order</td>
+                        <td>A user can find their way through the website in a sequential and meaningful order. The focus order follows a sequence that preserves the meaning and functionality of the page. The order in which the website is presented has meaning since first the user sees the title of the webpage, then the 'abous us' section which describes what kind of website the user is on. Following this the user is provided with products. This makes our website have a meaningful order. As described in point 2.4.2 the user can also navigate to every part of the website using the 'tab' key and use every function including forms and links using keyboard keys. </td>
+                    </tr>
+                    <tr>
+                        <td>2.4.4 Link Purpose (In Context)</td>
+                        <td>Every link on this website describes where the user would be redirected to. The navigation bar in the top of the document describes which section there are directed to. The same goes for the links directed to the mobile providers, where the names describe where they are redirected to and hence their purpose.</td>
+                    </tr>
+                </tbody>
+            </table>
+                <h2>Appendix B</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Assignment</th>
+                            <th>Grade</th>
+                            <th>Possitive Feedback</th>
+                            <th>Negative Feedbak</th>
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        <td>1</td>
+                        <td>96/100</td>
+                        <td>The TA gave a clear and a good feedback. According to him our page is good. He/She gave us full points exept for two parts of the css part.
+                            More specifically, the print style and the responsive design.</td>
+                            <td>We got 3/5 for the print style. His comment was: 'Things such as the form and the submit button of the form and navigation bar should not be present in the print-version of the page,
+                                and the pagebreaks could've been implemented better.'</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>100/100</td>
+                        <td>The TA gave us 100/100. So we obtained all points. We think that is good</td>
+                        <td>But that did not stop us from thinking of further improvements.
+                            We found out that if we sort the table according to (brand, model .....), and then add a product, the new product will be added as the last element.
+                            a better way is to insert the new product directly to its right place in the table.
+                        </td>
+                    </tr>
+                </table>
+        </div>
+    </body>
+</html>

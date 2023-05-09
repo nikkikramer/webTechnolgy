@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>EasyMobile</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header2">
+                <h1>EasyMobile</h1>
+                <p>"My Cell phone is my <strong>best</strong> friend. It's my lifeline to the outside world."</p>
+                <p><em>- Carrie Underwood</em></p>
+            </div>
+            
+            <nav class="nav-bar">
+                <div class="logo">
+                    <h4>EasyMobile</h4>
+                </div>
+                <ul class="nav_links">
+                    <li>
+                        <a href="#top" target="_self">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#table_top_products" target="_self">TOP PRODUCTS</a>
+                    </li>
+                    <li>
+                        <a href="#aboutus" target="_self">ABOUT</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="aboutus" class="aboutus">
+            <h2>About Us</h2>
+            
+            <div class="row">
+                <div class="video-about">
+                    <video src="https://static.videezy.com/system/resources/previews/000/018/336/original/ICON-VERSION5.mp4" loop autoplay muted id="vid"></video>
+                </div>
+                
+                <div class="aboutus_text">
+                    <h4>Why us?</h4>
+                    <p><strong>EasyMobile</strong> aims to provide its customers with the newest mobile phones for affordable prices. EasyMobile may be a roaring and growing business at the center of the movable sector that serves numerous customers through our retail, wholesale and online activities. For retail customers our company has become a saw for mobiles, parts, accessories, 
+                        services and repairs through our three shops in <abbr title="The Netherlands">NL</abbr> located at Amsterdam, Rotterdam, Maastricht and Alkmaar.
+
+                    Currently established for over a decade, we have a tendency to extended into wholesale offer and distribution concerning four years past and have conjointly developed refined, easy websites to sell mobiles, parts, repair services and accessories to new customers everyplace.
+
+                    EasyMobile success thus far has primarily been designed on our dedication to providing a superb clientservice, treating every client as special and going the additional mile, whenever necessary, to search out the correct product and services.
+                    </p>
+                    <pre>visit us!
+Feel Welcome
+                    </pre>
+                </div>
+            </div>
+            
+        </section>
+        
+        
+        
+        <section id="table_top_products">
+            <h2>Top Products</h2>
+            <div class="tablecont">
+                <form action="https://wt.ops.labs.vu.nl/api22/33a096d5" method="post">
+                    <table class="bigtable">
+                    <caption><em>Our</em> <strong>best</strong> selling products</caption>
+                    <thead>
+                        <tr>
+                            <th>brand</th>
+                            <th>model</th>
+                            <th><abbr title="Operating System">OS</abbr></th>
+                            <th>screensize</th>
+                            <th>image</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Apple</td>
+                            <td>iPhone 13 pro max</td>
+                            <td>iOS 15.2</td>
+                            <td>6.68 inches</td>
+                            <td><figure>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/IPhone_X_vector.svg/440px-IPhone_X_vector.svg.png" alt="Iphone image" width="45" height="80">
+                                <figcaption>iPhone</figcaption>
+                            </figure> </td>
+                        </tr>
+                        <tr>
+                            <td>Samsung</td>
+                            <td>Galaxy S21 Ultra</td>
+                            <td>Android 11</td>
+                            <td>6.8 inches</td>
+                            <td><figure>
+                                <img src="https://www.mytrendyphone.nl/images/Samsung-Galaxy-S21-Ultra-5G-128GB-Phantom-Black-8806090887505-15012021-01-p.jpg" alt="Samsung image" width="80" height="80">
+                                <figcaption>Galaxy</figcaption>
+                            </figure></td>
+                        </tr>
+                        <tr>
+                            <td>Huawei</td>
+                            <td>P30 PRO</td>
+                            <td>HarmonyOS</td>
+                            <td>6</td>
+                            <td>
+                                <figure>
+                                    <img src="https://www.thebackmarket.nl/cdn-cgi/image/format=auto,quality=75,width=1080/https://d1eh9yux7w8iql.cloudfront.net/product_images/283569_f9e62212-d422-4387-9d5d-6a9a6e3b6a41.jpg" alt="Huawei image" width="80" height="70">
+                                    <figcaption>P30 Pro</figcaption>
+                                </figure>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="brand" id="brand" placeholder="Brand" required>
+                            </td>
+                            <td>
+                                <input type="text" name="model" id="model" placeholder="Model" required>
+                            </td>
+                            <td>
+                                <input type="text" name="os" id="os" placeholder="OS" required>
+                            </td>
+                            <td>
+                                <input type="number" name="screensize" id="screensize" placeholder="Screensize" step=".01" required>
+                            </td>
+                            <td>
+                                <input type="file" accept="image/*" name="image" id="image" required>
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="submit" id="addproduct" class="button">Add product</button>
+                </form>
+            </div>
+        </section>
+        
+         <section id="attributes">
+            <div>
+                <dl>
+                    <dt>Apple iPhone 13 X</dt>
+                    <dd>iPhone 13 Pro Max has the best camera on a smartphone</dd>
+                    <dd>Cameras are the main star of the Samsung Galaxy S21 Ultra 5G.</dd>
+
+                    <dt>Samsung Galaxy S20</dt>
+                    <dd>The Galaxy S21 Ultra also fully supports Samsung's S Pen</dd>
+                    <dd>Cameras are the main star of the Samsung Galaxy S21 Ultra 5G.</dd>
+
+                    <dt>Huawei P30 Pro</dt>
+                    <dd>Capture the best things in the moment and create your vision for the future.</dd>
+                </dl>
+                
+            </div>
+            	
+        </section>
+        
+        <section class="accesories">
+            <table class="table1">
+                <caption>Most ordered accessories</caption>
+                <tr>
+                    <th>Phone</th>
+                    <th>Cases</th>
+                    <th>Cables</th>
+                    <th>Screen protectors</th>
+                </tr>
+                <tr>
+                    <td>iPhone</td>
+                    <td><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MM2M3?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1634340542000" alt="iphone case" width="100" height="100"></td>
+                    <td><img src="https://m.media-amazon.com/images/I/81Rn3MmYvZL._SL1500_.jpg" alt="iphone cable" width="100" height="100"></td>
+                    <td><img src="https://media.s-bol.com/N7VLMXNlEVkz/r0PZxAB/908x1200.jpg" alt="screen protector" width="100" height="100"></td>
+                </tr>
+
+                <tr>
+                    <td>Galaxy S21 Ultra</td>
+                    <td><img src="https://www.mytrendyphone.nl/images/Mercedes-Benz-Dynamic-Carbon-Fiber-Case-Samsung-Galaxy-S21-Ultra-5G-Black-3700740497944-24022021-01.jpg" alt="Galaxy s21 ultra case" width="100" height="100"></td>
+                    <td><img src="https://m.media-amazon.com/images/I/71TFqeZBCES._AC_SL1500_.jpg" alt="galaxy cable" width="100" height="100"></td>
+                    <td><img src="https://images.mobilefun.co.uk/graphics/450pixelp/83713.jpg" alt="ultra screen protector" width="100" height="100"></td>
+                </tr>
+
+            </table>
+        </section>
+        
+        <section id="best_providers" class="best_providers">
+        <h2>The best mobile providers</h2>
+        <div class="row">
+            <div class="bestProvidersText">
+                <p>Our store solely offers mobile phones against fair prices, which you can't get at either one of the biggest mobile provider brands. However, to have a working phone one needs to have a sim-only subsrciption at one of these providers. We have selected the best mobile providers with their respective overall grade, according to research done by the <strong><a href="https://www.consumentenbond.nl/mobiel-abonnement/beste" target="_blank">consumentenbond</a></strong> down below. 
+                </p>
+            </div>
+            <div>
+                <nav>
+                    <ol>
+                        <li>
+                            <a href="https://www.simyo.nl" target="_blank">Simyo</a> (8.9)
+                        </li>
+                        <li>
+                            <a href="https://www.ben.nl" target="_blank">Ben</a> (8.4)
+                        </li>
+                        <li>
+                            <a href="https://www.kpn.com/mobiel-shop.htm" target="_blank">KPN</a> (8.4)
+                        </li>
+                        <li>
+                            <a href="https://www.simpel.nl" target="_blank">Simpel</a> (8.4)
+                        </li>
+                        <li>
+                            <a href="https://www.youfone.nl" target="_blank">Youfone</a> (8.4)
+                        </li>
+                        <li>
+                            <a href="https://www.hollandsnieuwe.nl" target="_blank">Hollandsnieuwe</a> (8.2)
+                        </li>
+                        <li>
+                            <a href="https://www.vodafone.nl/abonnement/mobiel" target="_blank">Vodafone/Ziggo</a> (8.2)
+                        </li>
+                        <li>
+                            <a href="https://www.t-mobile.nl" target="_blank">T-Mobile</a> (8.1)
+                        </li>
+                        <li>
+                            <a href="https://www.tele2.nl" target="_blank">Tele2</a> (8.0)
+                        </li>
+
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        </section>
+        
+        <section class="browser_compatibility" id="browser_compatibility">
+        <h2>Browser compatibility</h2>
+        <p>Our default browser was Google chrome.
+        But we also tested the files using Microsoft Edge and Opera. The tests were done using MacOS and Windows.</p>
+        <p>All browsers showed similar behaviours.
+        The links work perfectly.
+        The whole page functions as desired.
+        Both css and html were rendered displayed the same way using Google chrome, Opera and Microsoft Edge.</p>
+            
+        <p>The page was tested in almost all sizes the browsers has. But we focused on (Fullscreen, iPhone X, iPad, iPad pro, Galaxy S9+, Galaxy Tab and responsive mode)
+             While testing our page with different screen sizes, the page on Chrome and Microsoft Edge was not really responsive and the tables did not fit in the page.
+            So an important part of the page was not visible. On Opera the tables were fully dispalyed when the screen gets smaller but the header and the footer were not complete.
+            We realised that the main issue was the tables, because all other elements were dispalyed perfectly in all different screen sizes.</p>
+
+        <p>We fixed that this way: We first determined different screen sizes using @media.
+            So that when the screen gets small, the tables will be structured vertically. Using this technique
+            all elements fitted nicely and the page became fully responsive.
+        </p>
+            
+        <p>While printing the page or saving it as a PDF-file, browsers acted differently.
+            Google Chrome and Microsoft Edge deleted all background colours and background images. And the page became plain and basic.
+            On the other hand printing it using Opera went slightly different. It rendered all background colours (header, th,..), 
+            but it didn't display the background images.We could have used @print to fix that, but in all cases essential elements of the page were fully visible and the background images will cost alot of ink to print.</p>
+
+        </section>
+
+        <footer class="footerinfo">
+            <h3 id="footer_logo">EasyMobile <br></h3>
+            <p> - Follow us on social media</p>
+        </footer>
+        
+    </body>
+</html>

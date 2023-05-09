@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Assignment 3</title>
+        <style>
+            table {
+                border: solid 2px black;
+                border-collapse: collapse;
+                border-spacing: 0;
+                font: normal 12px Arial, sans-serif;
+            }
+            table thead th {
+                background-color: beige;
+                border: solid 2px black;
+                color: #336B6B;
+                padding: 10px;
+                text-align: left;
+            }
+            table tbody td {
+                border: solid 2px black;
+                color: #333;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Documentation API</h1>
+        <div>
+            <h3>Example requests and responses</h3>
+            <p>The URI of the resource involved is accordingly: http://localhost:3000/ <br>
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resource</th>
+                        <th>Request verb</th>
+                        <th>Description</th>
+                        <th>Status code</th>
+                        <th>Posted data</th>
+                        <th>Response format</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>/phones.db</td>
+                        <td>GET</td>
+                        <td>Retrieve all products</td>
+                        <td>200 OK</td>
+                        <td>-</td>
+                        <td>application/json</td>
+                    </tr>
+                    <tr>
+                        <td>/phones.db/1</td>
+                        <td>GET</td>
+                        <td>Get a product with ID 1</td>
+                        <td>200 OK</td>
+                        <td>-</td>
+                        <td>application/json</td>
+                    </tr>
+                    <tr>
+                        <td>/phones.db</td>
+                        <td>POST</td>
+                        <td>Create a new product</td>
+                        <td>201 Created</td>
+                        <td>brand, model, os, image, screensize</td>
+                        <td>application/json</td>
+                    </tr>
+                    <tr>
+                        <td>/phones.db/1</td>
+                        <td>PUT</td>
+                        <td>Update product with ID 1</td>
+                        <td>204 No Content</td>
+                        <td>brand, model, os, image, screensize</td>
+                        <td>application/json</td>
+                    </tr>
+                    <tr>
+                        <td>/phones.db/1</td>
+                        <td>DELETE</td>
+                        <td>Delete product with ID 1</td>
+                        <td>204 No Content</td>
+                        <td>-</td>
+                        <td>application/json</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h3>Service examples of input and output</h3>
+            <div>
+                <h4>GET/phones.db</h4>
+                <p>Retrieve all products from the databse. <br>
+                Returns an HTTP response code of '200 OK' if the resource was found on the server, along with the response body. <br>
+                </p>
+                <pre>
+                    <code>
+{   "data": [
+        {
+        "id": 1,
+        "brand": "Fairphone"
+        "model": "FP3",
+        "os": "Android",
+        "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Fairphone_3_modules_on_display.jpg/320px-Fairphone_3_modules_on_display.jpg",
+        "screensize": 5.65
+        },
+        {
+        "id": 2,
+        "brand": "Apple"
+        "model": "iPhone 11",
+        "os": "iOS",
+        "image":"https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone11-black-select-2019_GEO_EMEA?wid=470&hei=556&fmt=png-alpha&.v=1567021766023",
+        "screensize": 6.1
+        }
+    ]
+}
+                    </code>
+                </pre>
+            </div>
+            <div>
+                <h4>GET/phones.db/id</h4>
+                <p>Retrieve a specific product from the database with productID: 'id'. <br>
+                Returns an HTTP response code of '200 OK' if the resource was succesfully found on the server, along with the response body. <br>
+                In case the resource is not found on the server the API returns an HTTP response code of '404 (Not Found)'. <br>
+                If the GET request is not correctly formed then the server will return an HTTP response code of '400 (BAD REQUEST)'.</p>
+                <pre>
+                    <code>
+{
+    "data": {
+        "id": 1,
+        "brand": "Fairphone"
+        "model": "FP3",
+        "os": "Android",
+        "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Fairphone_3_modules_on_display.jpg/320px-Fairphone_3_modules_on_display.jpg",
+        "screensize": 5.65
+    }
+}
+                    </code>
+                </pre>
+            </div>
+            <div>
+                <h4>POST/phones.db</h4>
+                <p>Add a product to the database. <br>
+                Returns an HTTP response code of '201 Created' if the product was succesfully added to the database and a response body with the location of the new product.<br>
+                When one of the categories (brand, model, os, image, screensize) is not defined an HTTP response of '400 Bad Request' will be returned. 
+                </p>
+                <pre>
+                    <code>
+{
+  "url": http://localhost:3000/phones.db/2
+} 
+                    </code>
+                </pre>
+            </div>
+            <div>
+                <h4>PUT/phones.db/id</h4>
+                <p>Update a product in the database with productID: 'id'.<br>
+                Returns a status code of '204 No Content' when the product is succesfully updated in the database.</p>
+                
+
+            </div>
+            <div>
+                <h4>DELETE/phones.db/id</h4>
+                <p>Delete a product from the database with productID: 'id'.<br>
+                Returns a status code of '204 No Content' when the product is succesfully deleted from the database. <br>
+                Return a status code of'404 Not Found' when the product with the specified id is not present in the database.
+                </p>
+            </div> 
+        </div>
+   
+    </body>
+</html>

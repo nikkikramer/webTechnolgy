@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "sqlite3": "^4.2.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "express-api",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Nikki Kramer",
+  "license": "ISC",
+  "description": "Express REST API"
+}
